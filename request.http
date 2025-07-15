@@ -15,7 +15,6 @@ GET {{baseUrl}}/rooms
 # @name createRoom
 POST {{baseUrl}}/rooms
 Content-Type: application/json
-
 {
   "name": "Sala de teste",
   "description": "Essa é uma sala de teste!"
@@ -28,3 +27,12 @@ Content-Type: application/json
 # Get room questions
 # @name getRoomQuestions
 GET {{baseUrl}}/rooms/{{idRoom}}/questions
+
+###
+# Create question
+# @name createQuestion
+POST {{baseUrl}}/rooms/{{idRoom}}/questions
+Content-Type: application/json
+{
+  "question": "Essa é uma pergunta teste para sua resposta?",
+}
