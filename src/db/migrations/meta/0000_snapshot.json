@@ -47,12 +47,8 @@
           "name": "questions_id_room_rooms_id_fk",
           "tableFrom": "questions",
           "tableTo": "rooms",
-          "columnsFrom": [
-            "id_room"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["id_room"],
+          "columnsTo": ["id"],
           "onDelete": "no action",
           "onUpdate": "no action"
         }
